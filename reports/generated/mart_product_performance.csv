@@ -1,0 +1,5 @@
+product_code,product_name,transaction_count,total_quantity,total_sales
+PRD001,Espresso Beans,2,7.0,108.5
+PRD002,French Press,1,1.0,45.0
+PRD003,Matcha Mix,1,3.0,36.0
+PRD004,Coffee Grinder,1,1.0,120.0

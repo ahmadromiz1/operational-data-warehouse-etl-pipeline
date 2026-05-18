@@ -1,0 +1,33 @@
+# Python cache and virtualenv
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Editor and local tooling
+.vscode/
+image/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local database files
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+*.db
+*.sqlite
+*.sqlite3
+
+# Runtime outputs
+logs/*.log
+data/rejected/job-*_transactions_rejected.csv
+
+# Keep empty tracked folders
+!database/.gitkeep
+!logs/.gitkeep
+!reports/generated/.gitkeep
+!data/rejected/.gitkeep

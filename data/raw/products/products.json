@@ -1,0 +1,35 @@
+[
+  {
+    "product_code": "PRD001",
+    "product_name": "Espresso Beans",
+    "category": "Beverage",
+    "brand": "BrewCraft",
+    "unit_cost": 8.5,
+    "active_flag": "Y"
+  },
+  {
+    "product_code": "PRD002",
+    "product_name": "French Press",
+    "category": "Equipment",
+    "brand": "PressPro",
+    "unit_cost": 30.0,
+    "active_flag": "Y"
+  },
+  {
+    "product_code": "PRD003",
+    "product_name": "Matcha Mix",
+    "category": "Beverage",
+    "brand": "GreenLeaf",
+    "unit_cost": 5.5,
+    "active_flag": "Y"
+  },
+  {
+    "product_code": "PRD004",
+    "product_name": "Coffee Grinder",
+    "category": "Equipment",
+    "brand": "GrindWorks",
+    "unit_cost": 85.0,
+    "active_flag": "Y"
+  }
+]
+

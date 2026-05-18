@@ -1,0 +1,50 @@
+project:
+  name: Operational Data Warehouse ETL Pipeline
+  timezone: Asia/Bangkok
+
+database:
+  url: sqlite:///database/warehouse.db
+
+paths:
+  transactions_csv: data/raw/transactions/transactions.csv
+  customers_excel: data/raw/customers/customers.xlsx
+  products_json: data/raw/products/products.json
+  rejected_records_dir: data/rejected
+  reports_dir: reports/generated
+  log_file: logs/etl.log
+
+sources:
+  transactions:
+    enabled: true
+    type: csv
+  customers:
+    enabled: true
+    type: excel
+  products:
+    enabled: true
+    type: json
+  branches:
+    enabled: true
+    type: mock_api
+
+pipeline:
+  batch_size: 5000
+  default_mode: incremental
+  allowed_sources:
+    - all
+    - transactions
+    - customers
+    - products
+    - branches
+
+validation:
+  required_transaction_fields:
+    - transaction_id
+    - transaction_date
+    - customer_id
+    - product_code
+    - branch_code
+    - quantity
+    - unit_price
+    - total_amount
+

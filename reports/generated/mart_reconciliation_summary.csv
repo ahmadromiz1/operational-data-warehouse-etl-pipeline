@@ -1,0 +1,2 @@
+run_date,source_transaction_count,valid_transaction_count,rejected_transaction_count,source_total_amount,loaded_total_amount,rejected_total_amount,amount_difference
+2026-05-18,12,5,7,559.5,309.5,250.0,0.0
